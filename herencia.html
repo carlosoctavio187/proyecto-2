@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia y Cascada</title>
+</head>
+<body bgcolor="gray">
+    <h2>Herencia y Cascada</h2>
+    <p>Herencia:
+
+        ¿Por qué tiene CSS un mecanismo de herencia? Probablemente, la manera más sencilla de responder a esta pregunta sea pensar qué pasaría si no existiera la herencia. Se deberían especificar cuestiones como la familia de fuentes, el tamaño de la fuente y el color del texto individualmente para todos y cada uno de los tipos de elemento.
+        
+        Mediante la herencia, por ejemplo, se pueden especificar las propiedades de las fuentes de los elementos html o body y todo el resto de elementos los heredarán.
+        
+         Se pueden especificar los colores de fondo y de primer plano de un elemento contenedor concreto y todos los elementos hijos de este contenedor heredarán automáticamente el color de primer plano.
+         El color de fondo no se hereda, pero el valor inicial de background-color (color de fondo) es transparent, lo cual significa que el fondo del padre se verá a través de él. El efecto es el mismo que si se heredara el color de fondo, pero pensad qué sucedería si se heredaran las imágenes de fondo: todos los hijos tendrían la misma imagen de fondo como padre y, por lo tanto, todo parecería un rompecabezas creado por alguien con problemas de drogas, ya que el fondo "volvería a empezar desde cero" para cada elemento.</p>
+         <h2>Cómo funciona la herencia:</h2>
+         <p>Todos los elementos de un documento HTML heredan todas las propiedades heredables de su padre excepto el elemento raíz (html), que no tiene progenitor.
+
+            El hecho de que las propiedades heredadas tengan algún efecto o no depende de otros factores, como veremos más adelante cuando hablemos de la cascada. De la misma manera que una madre de ojos azules puede tener un hijo de ojos marrones si el padre tiene los ojos marrones, las propiedades heredadas en CSS pueden anularse.</p>
+            <center><img src="img/herencia1.jpg" width="300" height="200"></center>
+            <h2>Cascada:</h2>
+            <li>Importancia</li>
+            <li>Especificidad</li>
+            <li>Orden en las fuentes</li>
+            <h2>Importancia:</h2>
+            <li>Hoja de estilos de agente de usuario.</li>
+            <li>Declaraciones normales en hojas de estilo de usuario.</li>
+            <li>Declaraciones normales en hojas de estilo de autor.</li>
+            <li>Declaraciones importantes en hojas de estilo de autor.</li>
+            <li>Declaraciones importantes en hojas de estilo de usuario.</li>
+            <p>
+                <h2>En resumen:</h2>
+                Herencia y cascada son conceptos básicos que cualquier diseñador web debe comprender.
+La herencia permite declarar propiedades en elementos de nivel alto y que estas propiedades se transmitan a todos los elementos descendientes. Sólo algunas propiedades se heredan por defecto, pero la herencia puede forzarse mediante la palabra clave inherit.
+
+La cascada soluciona los conflictos cuando varias declaraciones afectan a un elemento determinado. Las declaraciones importantes anulan a las que no lo son tanto. Entre declaraciones de igual importancia, la especificidad de la regla controla cuál se aplica. Y, si todas las demás son iguales, el orden de las fuentes supone la distinción definitiva.
+            </p>
+            <center><img src="img/herencia2.jpg" width="300" height="200"></center>
+
+</body>
+</html>
